@@ -12,7 +12,7 @@ async def get_font(size):
 
 async def get_dowload_img(link,size = None, thumbnail_size = None):
     try:
-        async with aiohttp.ClientSession() as session:
+        async with aiohttp.ClientSession(trust_env=True) as session:
             async with session.get(link) as response:
                 image = await response.read()
     except:

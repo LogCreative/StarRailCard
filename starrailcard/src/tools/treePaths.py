@@ -6,7 +6,7 @@ import aiohttp
 url = "https://raw.githubusercontent.com/FortOfFans/HSRMaps/master/maps/en/avatartree.json"
 
 async def fetch_data():
-    async with aiohttp.ClientSession() as session:
+    async with aiohttp.ClientSession(trust_env=True) as session:
         async with session.get(url) as response:
             data = await response.json(content_type='text/plain')
             return data
