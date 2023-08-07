@@ -35,7 +35,7 @@ asyncio.run(mains())
 |  English    |     en  |  русский    |     ru  |  Chinese    |    chs  |
 |  Tiếng Việt |     vi  |  ไทย        |     th  | Taiwan     |    cht  |
 |  português  |     pt  | 한국어      |     kr  | deutsch    |     de  |
-|  日本語      |     jp  | 中文        |     zh  | español    |     es  |
+|  日本語      |     jp  | 中文        |     cn  | español    |     es  |
 |  中文        |     zh  | Indonesian |     id  | français   |     fr  |
 
 
