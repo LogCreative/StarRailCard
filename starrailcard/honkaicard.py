@@ -1,8 +1,8 @@
 # Copyright 2023 DEViantUa <t.me/deviant_ua>
 # All rights reserved.
 
-from src.tools import translation, pill, modal
-from src.generators import one
+from .src.tools import translation, pill, modal
+from .src.generators import one
 from honkairail import starrailapi
 import asyncio,re,os,datetime
 
