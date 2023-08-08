@@ -1,2 +1,4 @@
 Pillow
 honkairail
+aiohttp
+pydantic<2
