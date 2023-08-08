@@ -1,11 +1,13 @@
+import asyncio
+import os, shutil, sys
+
+sys.path.append('../')
 from starrailcard import honkaicard
 from starrailcard.src.tools.pill import get_dowload_img
-import asyncio
-import os, shutil
 
 uid       = 109814396
-outputdir = "web/RailCard"
-imgdir    = "RailCard"
+outputdir = "RailCard"
+imgdir    = outputdir
 lang      = "cn"
 preserve  = True
 
@@ -26,6 +28,7 @@ async def main():
 
         # card
         r = await hmhm.creat(uid=uid)
+        print(r)
         character_list_str = []
         for character_card in r.card:
             character_fullname = "{}-{}".format(character_card.name.replace(' ','_'), character_card.rarity)
@@ -43,8 +46,13 @@ async def main():
                     character_list_str.append(f_character_fullname)
         
         # config
-        with open("web/railcard_config.js", "w") as config_js:
+        with open("railcard_config.js", "w") as config_js:
             config_js.write("characters = [{}];\nimgdir = \"{}\"\n".format(
                 ', '.join(character_list_str), imgdir))
+            
+        # finish
+        print("\nGeneration finished in dir: {}".format(outputdir))
+        print("Config is generated in: railcard_config.js, image diretory is: {}".format(imgdir))
+        print("Web page could be viewed in: railcard.html")
 
 asyncio.run(main())
