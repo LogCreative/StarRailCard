@@ -13,11 +13,11 @@ A static web page generator for StarRailCard.
 
 ## Usage
 
-You should install the package the normal way to install the dependencies.
+Install the dependencies:
+```bash
+pip install -r requirements.txt
 ```
-pip install starrailcard
-```
-will install the current latest, but the web module here will use the modified package in the parent directory directly.
+The web module here will use the modified package in the parent directory directly.
 
 
 And run the script, pass the uid as the argument:
