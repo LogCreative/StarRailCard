@@ -8,6 +8,7 @@ from pathlib import Path
 assets = Path(__file__).parent.parent / 'assets'
 # font = str(assets / 'font' / 'NotoSansKR-Bold.otf')
 font = str(assets / 'font' / 'NotoSansCJKsc-Bold.otf')
+print(font)
 
 mapping = {
     'total_bg': assets/'bg'/'bg.png',
