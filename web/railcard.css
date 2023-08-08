@@ -1,0 +1,43 @@
+#railcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#railcard #railcard_headbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+#railcard #railcard_headbar .imgdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+}
+#railcard #railcard_headbar .imgdiv:hover {
+    cursor: pointer;
+}
+#railcard #railcard_headbar img {
+    width: 48px;
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 0px;
+    border-radius: 5px 5px 10px 5px;
+}
+#railcard #railcard_headbar .rarity5 {
+    background-image: linear-gradient(rgb(182,130,75), rgb(211,143,68));
+}
+#railcard #railcard_headbar .rarity4 {
+    background-image: linear-gradient(rgb(135,122,169),rgb(164,133,195));
+}
+#railcard #railcard_detail {
+    width: 100%;
+}
+#railcard #railcard_detail_img {
+    width: 100%;
+}
