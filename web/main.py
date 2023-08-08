@@ -2,7 +2,6 @@ import asyncio
 import os, shutil, sys
 import argparse
 
-sys.path.append('../')
 from starrailcard import honkaicard
 from starrailcard.src.tools.pill import get_dowload_img
 from starrailcard.src.tools.translation import supportLang
