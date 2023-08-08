@@ -3,8 +3,13 @@
 A static web page generator for StarRailCard.
 
 > [StarRailCard](https://github.com/DEViantUA/StarRailCard) has an active update on PyPI, but not on GitHub.
+> 
 > This repo has some fixes on optimizing the experience for Chinese users, whose related issue has been reported on [Issue #1](https://github.com/DEViantUA/StarRailCard/issues/1).
+> 
 > Still looking forward to see more feature development on the upstream package.
+
+<img width="669" alt="preview" src="https://github.com/LogCreative/StarRailCard/assets/61653082/731cd519-0d3c-4a6d-a63e-f04c91263ade">
+
 
 ## Usage
 
